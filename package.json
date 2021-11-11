@@ -1,0 +1,24 @@
+{
+  "name": "crm-baza-klientow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kinetic639/CRM-baza-klientow.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kinetic639/CRM-baza-klientow/issues"
+  },
+  "homepage": "https://github.com/Kinetic639/CRM-baza-klientow#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.4"
+  }
+}
