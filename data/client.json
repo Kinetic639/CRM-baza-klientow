@@ -1,26 +1,14 @@
 [
-    {
-        "name": "Tester",
-        "mail": "zvxcvzxcv@gmail.com"
-    },
-    {
-        "id": "1743257b-cc58-4848-a420-e9df22d79f2c",
-        "name": "sfgsdfgsdf",
-        "mail": "abcd@gmail.com"
-    },
-    {
-        "id": "acac73ef-9c45-4ebc-9a70-6da762ad27cd",
-        "name": "12341324123",
-        "mail": "abcd@gmail.com"
-    },
-    {
-        "id": "a5e20bb1-0ba3-40a6-a322-1ae32c9d3de9",
-        "name": "twowertwrtja",
-        "mail": "abcd@gmail.com"
-    },
-    {
-        "id": "2c7c654d-ad39-40fe-a6a4-65f59b1c321b",
-        "name": "twoja9078907",
-        "mail": "abcd@gmail.com"
-    }
+  {
+    "id": "1756547b-cc58-4848-a420-e9df22d79f2c",
+    "name": "Janusz",
+    "email": "Janusz@gmail.com",
+    "nextContactAt": "Jutro"
+  },
+  {
+    "id": "1743257b-cc58-4848-a420-e96546465465",
+    "name": "Beata",
+    "email": "beata@gmail.com",
+    "nextContactAt": "Wczoraj"
+  }
 ]

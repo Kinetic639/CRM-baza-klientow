@@ -1,0 +1,26 @@
+html {
+    font-family: Arial, sans-serif;
+}
+
+table {
+    text-align: left;
+}
+
+thead tr {
+    background: #a9a9a9;
+}
+
+tr {
+    margin: 2px;
+    background: #e0e0e0;
+}
+
+tr:nth-child(even) {
+    margin: 2px;
+    background: #efefef;
+}
+
+td,
+th {
+    padding: 6px;
+}

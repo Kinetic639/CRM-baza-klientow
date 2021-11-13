@@ -9,7 +9,6 @@ class Db {
   }
   async _load() {
     this._data = JSON.parse(await readFile(this.dbFileName, 'utf8'));
-    console.log(this._data);
   }
   _save() {
     writeFile(this.dbFileName, JSON.stringify(this._data), 'utf8');

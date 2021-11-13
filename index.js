@@ -1,36 +1,32 @@
-const express = require('express');
-const hbs = require('express-handlebars');
-const { clientsRouter } = require('./routers/client');
-const { homeRouter } = require('./routers/home');
-const { db } = require('./utils/db');
+const express = require("express");
+const hbs = require("express-handlebars");
+const { clientsRouter } = require("./routers/client");
+const { homeRouter } = require("./routers/home");
+const { db } = require("./utils/db");
 
 const app = express();
 
 app.use(
   express.urlencoded({
     extended: true,
-  }),
+  })
 );
-app.use(express.static('public'));
+app.use(express.static("public"));
 app.use(express.json());
 // this.app.use(cookieParser());
 
 app.engine(
-  '.hbs',
+  ".hbs",
   hbs({
-    extname: '.hbs',
+    extname: ".hbs",
     //    helpers: handlebarsHelpers
-  }),
+  })
 );
-app.set('view engine', '.hbs');
+app.set("view engine", ".hbs");
 
-app.use('/', homeRouter);
-app.use('/client', clientsRouter);
-app.get('/test', (req, res) => {
-  const data = db.getOne('acac73ef-9c45-4ebc-9a70-6da762ad27cd');
-  res.send(data);
-});
+app.use("/", homeRouter);
+app.use("/client", clientsRouter);
 
-app.listen(3000, 'localhost', () => {
-  console.log('listening on port 3000');
+app.listen(3000, "localhost", () => {
+  console.log("listening on port 3000");
 });
