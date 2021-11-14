@@ -1,28 +1,52 @@
-const express = require('express');
-const {db} = require("../utils/db");
+const express = require("express");
+const { db } = require("../utils/db");
 
 const clientsRouter = express.Router();
 
 clientsRouter
-  .get('/', (req, res) => {
-    res.render('client/list-all', {
-      clients: db.getAll()
-    })
+  .get("/", (req, res) => {
+    res.render("client/list-all", {
+      clients: db.getAll(),
+    });
   })
-  .get('/:id', (req, res) => {
+  .get("/:id", (req, res) => {
     const id = req.params.id;
-    res.send(`pobierz pojedynczego klienta o id: ${id}`);
+    res.render("client/list-one", {
+      client: db.getOne(id),
+    });
   })
-  .post('/:id', (req, res) => {
-    res.send('Dodaj nowego klienta!');
+  .post("/", (req, res) => {
+    const id = db.create(req.body);
+    res.render("client/added", {
+      name: req.body.name,
+      id,
+    });
   })
-  .put('/:id', (req, res) => {
+  .put("/:id", (req, res) => {
     const id = req.params.id;
-    res.send(`Zmodyfikuj klienta o id ${id}!`);
+    db.update(id, req.body);
+    res.render("client/edited", {
+      name: req.body.name,
+      id,
+    });
   })
-  .delete('/:id', (req, res) => {
-    const id = req.params.id;ś
-    res.send(`Usuń klienta o id ${id}!`);
+  .delete("/:id", (req, res) => {
+    const id = req.params.id;
+    const client = db.getOne(id);
+    db.delete(id);
+    res.render("client/deleted", {
+      client,
+    });
+  })
+  .get("/forms/add", (req, res) => {
+    res.render("client/forms/add");
+  })
+  .get("/forms/edit/:id", (req, res) => {
+    const id = req.params.id;
+    const client = db.getOne(id);
+    res.render("client/forms/edit", {
+      client,
+    });
   });
 
 module.exports = {

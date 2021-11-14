@@ -4,9 +4,14 @@ html {
 
 table {
     text-align: left;
+    width: 60%;
+    margin: 0 auto;
+
+
 }
 
-thead tr {
+thead tr,
+.header-of-left th {
     background: #a9a9a9;
 }
 
