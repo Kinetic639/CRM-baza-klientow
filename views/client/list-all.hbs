@@ -17,12 +17,24 @@
   <tbody>
     {{#each clients}}
       <tr>
-        <th>{{this.email}}</th>
+        <th><a
+            href="mailto:{{this.email}}"
+            target="_blank"
+          >{{this.email}}</a></th>
         <td><a href="/client/{{this.id}}">{{this.name}}</a></td>
         <td>{{this.nextContactAt}}</td>
-        <td><a href="/client/{{this.id}}">Szczegóły</a></td>
-
+        <td><a href="/client/{{this.id}}">Szczegóły</a>
+          <form method="POST" action="/client/{{this.id}}?_method=DELETE">
+            <button type="submit">Usuń</button>
+          </form>
+        </td>
       </tr>
     {{/each}}
   </tbody>
 </table>
+
+<p>
+  <form action="/client/forms/add">
+    <button type="submit">Dodaj nowego klienta</button>
+  </form>
+</p>
