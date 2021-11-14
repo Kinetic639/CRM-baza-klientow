@@ -5,7 +5,7 @@
       E-mail:
     </p>
     <p>
-      <input type="email" name="email" value="{{client.email}}" />
+      <input type="email" name="email" value="{{client.email}}" required/>
     </p>
   </label>
   <label>
@@ -13,7 +13,7 @@
       Name:
     </p>
     <p>
-      <input type="text" name="name" value="{{client.name}}" />
+      <input type="text" name="name" value="{{client.name}}" required/>
     </p>
   </label>
   <label>
@@ -25,6 +25,7 @@
         type="date"
         name="nextContactAt"
         value="{{client.nextContactAt}}"
+        required
       />
     </p>
   </label>
