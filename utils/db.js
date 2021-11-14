@@ -39,10 +39,10 @@ class Db {
   update(id, newObj) {
     this._data = this._data.map((oneObj) => {
       if (oneObj.id === id) {
-        return {
+        return new ClientRecord({
           ...oneObj,
           ...newObj,
-        };
+        });
       } else {
         return oneObj;
       }
