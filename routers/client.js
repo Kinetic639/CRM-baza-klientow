@@ -10,9 +10,8 @@ clientsRouter
     });
   })
   .get("/:id", (req, res) => {
-    const id = req.params.id;
     res.render("client/list-one", {
-      client: db.getOne(id),
+      client: db.getOne(req.params.id),
     });
   })
   .post("/", (req, res) => {
