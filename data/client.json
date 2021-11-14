@@ -1,14 +1,1 @@
-[
-  {
-    "id": "1756547b-cc58-4848-a420-e9df22d79f2c",
-    "name": "Janusz",
-    "email": "Janusz@gmail.com",
-    "nextContactAt": "Jutro"
-  },
-  {
-    "id": "1743257b-cc58-4848-a420-e96546465465",
-    "name": "Beata",
-    "email": "beata@gmail.com",
-    "nextContactAt": "Wczoraj"
-  }
-]
+[{"id":"1743257b-cc58-4848-a420-e96546465465","name":"Beata","email":"beata@gmail.com","nextContactAt":"Wczoraj","notes":"dupa jasiu"},{"id":"17fa255d-be8c-406b-b3ac-e74b789e8bc6","email":"michal.stepien36@gmail.com","name":"Michał Stępień","nextContactAt":"2021-11-11","notes":"asssadasdas"},{"id":"c2fe0b08-e045-4514-9b5e-8a15a517178f","email":"michal.stepienadcasd36@gmail.com","name":"Michał Stępień","nextContactAt":"2021-11-11","notes":"asssadasdas"},{"id":"ec78ad34-e68c-44c6-bc63-02f44cc7bac7","email":"adcasdcas@test.pl","name":"asdcasdcasd","nextContactAt":"2021-11-25","notes":"asdcasdca"},{"id":"f9a853d8-eace-49e0-a9db-704e551f8a28","email":"michal.stepien36@gmail.com","name":"Michał Stępień","nextContactAt":"2021-11-03","notes":"adcasdcasdca"},{"id":"7aa1b0f5-b88a-4a61-a2e2-b24e2a2d5a9d","email":"adcasdcas@test.pl","name":"asdcasdcasd","nextContactAt":"2021-11-03","notes":"adscasdca"},{"id":"297e56fc-5ddb-42de-aedb-3de58b5648cb","email":"stara@email.com","name":"twoja stara","nextContactAt":"2021-11-18","notes":"nie ma kolaneeeeeeeeeeeeeeeeeeeeeeee"},{"id":"6433dd99-57c9-4cf2-9289-1981ba907d8c","email":"michal.stepien36@gmail.com","name":"Michał Stępień","nextContactAt":"2021-11-04","notes":"czxvzxcvzxcvzcxvzcxvzxcv"}]
